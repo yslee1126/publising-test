@@ -16,3 +16,9 @@ h2 {
 h3 {
     font-size: 18px;
 }
+
+input,
+button,
+select {
+    outline: none;
+}
