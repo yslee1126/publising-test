@@ -115,6 +115,15 @@ body {
     transform: translate(-50%, -50% ); */
 }
 
+/* .signin-content,
+.signup-content {
+    padding: 20px;
+} */
+/*본문을 감싸는 클래스 이름에 content 가 공통적으로 들어간다 전체 패딩줄 수 있다 */
+div[class*=content] {
+    padding: 20px;
+}
+
 /* Signin HTML */
 .container.signin {
     height: 750px;
@@ -164,10 +173,10 @@ body {
     justify-content: space-between;
 }
 .status label {}
-.status label input[type=checkbox] {
+.checkbox label input[type=checkbox] {
     display: none;
 }
-.status label input[type=checkbox] + em {
+.checkbox label input[type=checkbox] + em {
     /* border: solid 1px #000; */
     width: 16px;
     height: 16px;
@@ -175,7 +184,7 @@ body {
     transform: translateY(5px);
     margin-right: 3px;
 }
-.status label input[type=checkbox] + em::before {
+.checkbox label input[type=checkbox] + em::before {
     content: '\F26B';
     font-family: bootstrap-icons;
     font-style: normal;
@@ -183,7 +192,7 @@ body {
     transform: translateY(-3px);
     display: inline-block;
 }
-.status label input[type=checkbox]:checked + em::before {
+.checkbox label input[type=checkbox]:checked + em::before {
     color: var(--crimson);
 }
 .status a {}
@@ -239,4 +248,81 @@ body {
 }
 .social-btn a {
     margin: 2px;
+}
+
+/*signup html*/
+
+.signup {}
+.signup-inner {}
+
+.signup-field {
+    margin-bottom: 10px;
+}
+.signup-field span {
+    display: block;
+}
+.signup-field span em {
+    color: var(--crimson);
+}
+.signup-field.id-pw input {
+    width: 100%;
+    border: none;
+    border-bottom: solid 1px var(--gainsboro);
+    padding: 8px 0;
+}
+.signup-field.id-pw input::placeholder {
+    color: var(--light-grey);
+} 
+.signup-field.id-pw input:focus,
+.signup-field.birth div > *:focus,
+.signup-field.phone div input:focus {
+    border-color: var(--yellowgreen);
+}
+.signup-field.id-pw input:focus::placeholder,
+.signup-field.birth div > *:focus::placeholder,
+.signup-field.phone div input:focus::placeholder {
+    visibility: hidden;
+}
+.signup-field.birth {}
+.signup-field.birth div {
+    display: flex;
+    gap: 10px;
+}
+.signup-field.birth div > *,
+.signup-field.phone div > * {
+    /* flex: 1; 정확히 3등분이 안됨 */
+    width: 33.3333%;
+    border: solid 1px var(--gainsboro);
+    border-radius: 3px;
+    padding: 7px;
+    text-align: center;
+    color: var(--silvergrey);
+}
+.signup-field.birth div input {}
+.signup-field.birth div select {}
+.signup-field.phone {}
+.signup-field.phone span,
+.signup-field.birth span {
+    margin-bottom: 5px;
+}
+.signup-field.phone div {
+    display: flex;
+    gap: 10px
+}
+.signup-field.phone div input {
+    flex: 5;
+}
+.signup-field.phone div button {
+    flex: 2;
+    background-color: #fff;
+}
+.agree-term {
+    margin-bottom: 15px;
+}
+.agree-term label {
+    display: block;
+    font-size: 13px ;
+}
+.btn-signup {
+    background-color: var(--crimson);
 }
