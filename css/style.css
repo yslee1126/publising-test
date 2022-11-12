@@ -88,10 +88,12 @@ body {
     font-size: 22px;
     color: #fff;
 }
+.cart-alarm b,
 .user-alarm span {
-    border: solid 1px #000;
+    /* border: solid 1px #000; */
     position: relative;
 }
+.cart-alarm b em,
 .user-alarm span em {
     position: absolute;
     width: 15px;
@@ -104,6 +106,12 @@ body {
     justify-content: center;
     align-items: center;
 }
+.cart-alarm b em {
+    color: #fff;
+    top: 0;
+    right: 20px;
+}
+.cart-alarm b em::before,
 .user-alarm span em::before {
     content: attr(data-count);
     font-style: normal;
@@ -432,4 +440,25 @@ body {
 .search-recent .items .item span {
     font-size: 15px;
 }
-
+.search-increase {}
+.search-increase title {}
+.search-increase title h3 {
+    font-size: 16px;
+    margin-bottom: 0px;
+}
+.search-increase title p {
+    padding: 0;
+}
+.search-increase-list {
+    list-style: none;
+    padding-left: 15px;
+    counter-reset: rank 0;
+    line-height: 2em;
+    font-size: 15px;
+}
+.search-increase-list li::before {
+    counter-increment: rank;
+    content: counter(rank);
+    margin-right: 10px;
+    font-weight: 500;
+}
