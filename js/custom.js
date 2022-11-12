@@ -9,4 +9,12 @@ $(function(){
         $(this).siblings('.category-accordion .title').removeClass('active')
     })
 
+    $('.search-recent .btn-clear').click(function(){
+        $(this).parent().slideUp(250);
+    })
+
+    $('.search-recent .btn-all-clear').click(function(){
+        $('.search-recent .item').slideUp(250)
+    })
+
 })

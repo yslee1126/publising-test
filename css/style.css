@@ -124,6 +124,21 @@ body {
     padding: 20px;
 }
 
+.btn-all-clear {
+    border: none;
+    font-size: 11px;
+    background-color: var(--gainsboro);
+    color: #fff;
+    border-radius: 20px;
+    padding: 2px 8px;
+}
+.btn-clear {
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+    color: var(--light-grey);
+}
+
 /* Signin HTML */
 .container.signin {
     height: 750px;
@@ -375,3 +390,46 @@ body {
     display: block;
     padding: 8px 0;
 }
+
+/* search html */
+.search {}
+.search-inner {}
+.search-content {}
+.search-field {}
+.search-field input {
+    border: none;
+    padding: 8px;
+    width: 100%;
+    border-radius: 30px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    background: var(--snow) url('/images/icon-search.svg') no-repeat center left 15px;
+    padding-left: 40px;
+}
+.search-recent {
+    margin: 25px 0;
+}
+.search-recent .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search-recent .title h3 {
+    margin: 0px;
+    color: var(--crimson);
+    font-size: 16px;
+}
+
+.search-recent .items {
+    margin: 15px 0;
+}
+.search-recent .items .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px var(--gloudy-grey);
+    padding: 8px 0 ;
+}
+.search-recent .items .item span {
+    font-size: 15px;
+}
+
