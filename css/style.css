@@ -462,3 +462,71 @@ body {
     margin-right: 10px;
     font-weight: 500;
 }
+
+/* mypage html */
+.mypage {}
+.mypage-inner {}
+.mypage-content {
+    padding: 0;
+}
+.user-info {
+    padding: 20px;
+    display: flex;
+    gap: 5px;
+}
+.user-avatar {
+    flex: 1;
+}
+.user-avatar img {
+    width: 60px;
+    border-radius: 50%;
+}
+.user-summary {
+    flex: 4;
+}
+.user-summary .rating {}
+.user-summary .rating .btn-setting {
+    float: right;
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    color: var(--silver-grey);
+}
+.user-summary .rating span {
+    font-weight: 400;;
+}
+.user-summary .rating b {
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--limegreen);
+}
+.nickname {
+    font-size: 18;
+    margin-top: 5px;
+}
+.point-coupon {
+    display: flex;
+    gap: 5px;
+}
+.point-coupon div {
+    background-color: var(--gloudy-grey);
+    border-radius: 20px;
+    text-align: center;
+    padding: 2px 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.point-coupon div span {
+    font-size: 13px;
+    font-weight: normal;
+}
+.point-coupon div span:first-child {}
+.point-coupon div span:last-child {
+    color: var(--crimson);
+}
+.point-coupon .point {
+    flex: 3;
+}
+.point-coupon .coupon{
+    flex: 1;
+}
