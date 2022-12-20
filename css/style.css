@@ -370,7 +370,8 @@ body {
     position: relative;
     padding: 0 20px;
 }
-.category-accordion .title::after {
+.category-accordion .title::after,
+.user-shortcut a::after {
     content: '\F282';
     font-family: bootstrap-icons;
     background-color: var(--fuschia);
@@ -530,3 +531,78 @@ body {
 .point-coupon .coupon{
     flex: 1;
 }
+.delivering {
+    padding: 20px;
+}
+.delivering-items {
+    border: 1px solid var(--gloudy-grey);
+    padding: 15px;
+    border-radius: 5px;
+}
+.delivering h2 {
+    font-size: 16px;
+}
+.delivering-item {
+    display: flex;
+    gap: 10px;
+    border-bottom: 1px solid var(--gloudy-grey);
+    padding: 10px;
+}
+.delivering-item:first-child {
+    padding-top: 0px;
+}
+.delivering-item:last-child {
+    border: 0px;
+    padding-bottom: 0px;
+}
+.delivering-item .thum {
+    width: 60px;
+    height: 60px;
+}
+.delivering-item .thum img {
+    object-fit: cover;
+    width: inherit;
+    height: inherit;
+    border-radius: 5px;
+}
+.delivering-item .desc {}
+.delivering-item .desc span {
+    font-weight: normal;
+}
+.delivering-item .desc b {
+    display: block;
+    color: var(--limegreen);
+    font-weight: 400;
+    font-size: 16px;
+}
+.mypage .banner {}
+.mypage .banner a img {
+    width: 100%;
+}
+.user-shortcut {}
+.user-shortcut a {
+    display: flex;
+    border-bottom: 1px solid var(--gloudy-grey);
+    height: 50px;
+    align-items: center;
+    padding: 0 15px;
+    font-size: 15px;
+}
+.user-shortcut a::after {
+    transform: rotate(270deg);
+    background-color: transparent;
+}
+.user-shortcut a span {
+    font-weight: 400;
+    margin-left: 5px;
+}
+.user-shortcut a .bi {
+    width: 25px;
+    text-align: center;
+}
+.user-shortcut a:last-child {
+    border: none;
+}
+.user-shortcut a:nth-child(2) .bi {
+    font-size: 16px;
+} 
