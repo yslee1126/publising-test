@@ -606,3 +606,58 @@ body {
 .user-shortcut a:nth-child(2) .bi {
     font-size: 16px;
 } 
+
+/* cart html */
+.cart {}
+.cart-inner {}
+.cart-content {
+    padding: 0;
+}
+.cart-items-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.cart-items-header h3 {
+    margin: 0;
+    font-size: 16px;
+}
+.cart-items-summary {
+    padding: 20px ;
+}
+.cart-items-summary div {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+.cart-items-summary div:last-child {
+    border-top: solid 1px var(--gloudy-grey);
+    padding-top: 15px;
+}
+.cart-items-summary div span {
+    font-size: 15px;
+}
+.cart-items-summary div span:last-child {
+    font-weight: 500;
+}
+.cart-items-summary div span:first-child {
+    font-weight: normal;
+}
+.cart-items-summary div:last-child span:last-child {
+    font-size: 20px;
+}
+.btn-order {
+    background-color: var(--royalblue);
+    border-radius: 0;
+}
+.cart-notice {
+    font-size: 13px;
+    color: var(--light-grey);
+    list-style: none;
+    padding-left: 18px;
+}
+.cart-notice li::before {
+    content: '-';
+    margin-right: 5px;
+}
