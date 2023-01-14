@@ -797,3 +797,35 @@ body {
 .front .banner a img {
     width: 100%;
 }
+/* front slider  */
+.front-slider {
+    height: 275px;
+}
+.front-slider a img  {
+    width: 100%;
+}
+.front-slider .slick-arrow {
+    z-index: 1000;
+}
+.front-slider .slick-prev {
+    left: 15px;
+}
+.front-slider .slick-next {
+    right: 15px;
+}
+.front-slider .slick-prev::before {
+    color: black;
+    content: '\F285';
+    font-family: bootstrap-icons;
+    font-size: 20px;
+    zoom: 1.5;
+    transform: rotateY(180deg);
+    display: inline-block;
+}
+.front-slider .slick-next::before {
+    color: black;
+    content: '\F285';
+    font-family: bootstrap-icons;
+    font-size: 20px;
+    zoom: 1.5;
+}

@@ -17,4 +17,11 @@ $(function(){
         $('.search-recent .item').slideUp(250)
     })
 
+    //https://kenwheeler.github.io/slick/
+    $('.front-slider').slick({
+        arrows: true,
+        autoplay: true,
+        autoplaySpeed: 3000
+    });
+
 })
